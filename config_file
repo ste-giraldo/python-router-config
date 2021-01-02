@@ -1,0 +1,5 @@
+conf t
+ip domain-lookup
+ip name-server 8.8.8.8 8.8.4.4
+end
+wr
