@@ -24,8 +24,6 @@ SECRET = getpass.getpass("Enable Password: ")
 f = open('host_file')
 for ip in f.readlines():
 	ip = ip.strip()
-	#prefix files for backup
-	filename_prefix ='config_backup-' + ip
 	#session start
 	client = paramiko.SSHClient()
 	client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
